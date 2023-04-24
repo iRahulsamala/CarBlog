@@ -42,7 +42,7 @@ html{
     background-color: #555;
   }
 
-  .login {
+  .login,.Signup {
     color: white;
     text-decoration: none;
     margin-right: 20px;
