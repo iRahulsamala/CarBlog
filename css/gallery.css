@@ -1,0 +1,44 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color:darkblue;
+}
+#container{
+    width: 98vw;
+    height: 38vh;
+    position: absolute;
+    bottom: 0px;
+    left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid black;
+}
+.images{
+    width: 30vw;
+    height: 20vh;
+    margin-left: -90px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: -2px -2px -2px black;
+    position: relative;
+    transform: rotateY(20deg) skewY(-20deg);
+    transition: transform 1s,z-index 0.5s;
+    z-index: 0;
+}
+.images:hover{
+    transform: rotateY(0deg) skewY(0deg) scale(1.5) translate(0px,-20px);
+    z-index: 2;
+}
+#bigImage{
+    width: 30vw;
+    height: 40vh;
+    position: absolute;
+    left: 35%;
+    top: 60px;
+    box-shadow: 5px 5px 5px black;
+    background-size: 100% 300px;
+    background-image: url('../Assets/images/Bugatti\ Chiron.jpg');
+}

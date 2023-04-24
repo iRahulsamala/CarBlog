@@ -1,0 +1,340 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    height: 60px;
+  }
+
+  .logo {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+  }
+
+  .menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+  }
+
+  .nav-link:hover {
+    background-color: #555;
+  }
+
+  .login {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .login:hover {
+    background-color: white;
+    color: #333;
+  }
+header{
+    width:100%;
+    height:100vh;
+    background-color: black;
+    overflow: hidden;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+#headerVid{
+    width:100%;
+    filter: brightness(50%);
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+#headerArrow,#secArrow1,#secArrow2,#secArrow3,#secArrow4,#secArrow5,#secArrow6,#secArrow7,#secArrow8,#secArrow9,#secArrow10{
+    width:80px;
+    position:absolute;
+    bottom:20px;
+    transition:all 0.25;
+    z-index:3;
+    right:47%;
+  background-color: transparent;
+}
+#headerArrow:hover,#secArrow1:hover,#secArrow2:hover,#secArrow3:hover,#secArrow4:hover,#secArrow5:hover,#secArrow6:hover,#secArrow7:hover,#secArrow8:hover,#secArrow9:hover,#secArrow10:hover
+{
+    transform:translateY(20px);
+}
+#heading1,#heading2{
+    position:absolute;
+    z-index:3;
+    left:160px;
+    font-size:45px;
+    color:white;
+    letter-spacing: 50px;
+    word-spacing:30px;
+    text-shadow: 5px 5px 5px black;
+    font-family: 'poltawski Nowy',serif;
+}
+#heading2{
+    position:relative;
+    top:70px;
+    left:20px;
+    font-size:25px;
+    color:white;
+    letter-spacing:10px;
+    word-spacing: 20px;
+    text-shadow:5px 5px 5px black;
+    font-family: 'poltawski Nowy',serif;
+    transform:translateY(220px);
+    filter:opacity(0);
+}
+#carAni{
+    width:100%;
+    height:30px;
+    position:absolute;
+    z-index:3;
+    transform:translateX(-1430px);
+}
+#carimg{
+    position:absolute;
+    height:60px;
+    z-index:3;
+    right:0px;
+}
+#sec1{
+    width:100%;
+    height:100vh;
+    background-color:dodgerblue;
+    position:relative;
+    display:flex;
+    align-items:center;
+}
+#sec2{
+    width:100%;
+    height:100vh;
+    position:relative;
+    display:flex;
+    align-items:center;
+    background-color: dimgray;
+}
+#sec3{
+    width:100%;
+    height:100vh;
+    position:relative;
+    display:flex;
+    align-items:center;
+    background-color: #201E20;
+}
+#sec4{
+    width:100%;
+    height:100vh;
+    position:relative;
+    display:flex;
+    align-items:center;
+    background-image:radial-gradient( crimson,#201E20);
+}
+#sec5{
+    width:100%;
+    height:100vh;
+    position:relative;
+    display:flex;
+    align-items:center;
+    background-image:radial-gradient( red,#201E20);
+}
+#sec6{
+    width:100%;
+    height:100vh;
+    position:relative;
+    display:flex;
+    align-items:center;
+    background-image:radial-gradient( gold,red);
+}
+#sec7{
+    width:100%;
+    height:100vh;
+    position:relative;
+    display:flex;
+    align-items:center;
+    background-image:radial-gradient(black,midnightblue);
+}
+#sec8{
+    width:100%;
+    height:100vh;
+    position:relative;
+    display:flex;
+    align-items:center;
+    background-image:linear-gradient(black,blue);
+}
+#sec9{
+        width:100%;
+        height:100vh;
+        position:relative;
+        display:flex;
+        align-items:center;
+    background-color: black;
+}
+#sec10{
+    width:100%;
+    height:100vh;
+    position:relative;
+    display:flex;
+    align-items:center;
+    background-image:radial-gradient( slategrey,#201E20);
+}
+#secArrow1,#secArrow2,#secArrow3,#secArrow4,#secArrow5,#secArrow6,#secArrow7,#secArrow8,#secArrow9,#secArrow10{
+    width:60px;
+}
+
+
+
+.cars{
+    background-image: url(../Assets/images/Bugatti\ Chiron.jpg);
+    background-size: 55vw 60vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:80vh;
+    width:51%;
+    position:absolute;
+    right:0px;
+    clip-path: polygon(34% 0,100% 0%,100% 100%, 0% 100%);
+    clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
+    transition:background-size 0.2s,background-position 0.2s;
+}
+.cars:hover{
+   background-size:120% 120%;
+}
+.carPara{
+    color:white;
+    width:50%;
+    padding:0px 30px;
+    letter-spacing: 4px;
+    font-size: 20px;
+    text-indent: 50px;
+    text-align:justify;
+}
+.carsName{
+    color:black;
+    font-size: 60px;
+    position:absolute;
+    letter-spacing: 2px;
+    top:40px;
+    left:20px;
+    font-family: 'poltawski Nowy',serif;
+    
+}
+#car2Name{
+    color:crimson;
+}
+#car3Name{
+    color:peru;
+}
+#car4Name{
+    color:slategray;
+}
+#car5Name{
+    color:black;
+}
+#car6Name{
+    color:black;
+}
+#car7Name{
+    color:whitesmoke;
+}
+#car8Name{
+    color:crimson;
+}
+#car9Name{
+    color:cyan;
+}
+#car10Name{
+    color: lightslategrey;
+}
+
+#car2{
+    background-image:url(../Assets/images/Lamborghini_Veneno_1.jpg);
+}
+#car3{
+ background-image:url(../Assets/images/Dodge-Challenger.jpg);
+}
+#car4{
+    background-image:url(../Assets/images/Mcalren.jpg); 
+}
+#car5{
+    background-image:url(../Assets/images/bmwz4.jpg); 
+}
+#car6{
+    background-image:url(../Assets/images/Ferrari\ 812.jpg); 
+}
+#car7{
+    background-image:url(../Assets/images/Jaguar\ F4.jpg); 
+}
+#car8{
+    background-image:url(../Assets/images/maserati_levante_trofeo_dynamic_18.jpg); 
+}
+#car9{
+    background-image:url(../Assets/images/Aston\ martin\ vantage.jpg); 
+}
+#car10{
+    background-image:url(../Assets/images/volvo\ Xc90.jpg.jpg); 
+}
+
+footer{
+    width:100%;
+    height:100px;
+    background-color: black;
+    display:flex;
+    align-items: center;
+    justify-content: start;
+    
+}
+.logo{
+    padding-left:30px;
+    width:35px;
+    height: 2vh;
+    transition:transform 0.2s;
+}
+.logo:hover{
+    transform: scale(1.2);
+}
+#logout{
+    position:absolute;
+    font-size:25px;
+    top:40px;
+    right:40px;
+    color:white;
+    z-index:3;
+    text-transform: uppercase;
+    cursor:pointer;
+    transition:transform 0.2s;
+}
+#logout:hover{
+    transform:scale(1.2);
+}
+#navigation{
+    width:100%;
+    height:100px;
+    background-color:black;
+}
