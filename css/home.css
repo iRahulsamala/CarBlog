@@ -42,7 +42,17 @@ html{
     background-color: #555;
   }
 
-  .login,.Signup {
+  .login,{
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    font-weight: bold;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+.Signup {
     color: white;
     text-decoration: none;
     margin-right: 20px;
@@ -52,7 +62,6 @@ html{
     border-radius: 5px;
     transition: all 0.3s ease;
   }
-
   .login:hover {
     background-color: white;
     color: #333;
